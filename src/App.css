@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+/* css reset*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #EFEFEF;
+background-attachment: fixed;
+background-image: url(https://images.unsplash.com/photo-1614850715649-1d0106293bd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
+background-position: 10% 40% ;
+background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App css */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.app-header h2 {
+  display: inline;
+  text-decoration: none;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo i {
+  margin-right: 10px;
+  
+} 
+
+/* BookForm css */
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input {
+  margin-bottom: 15px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  font-size: 18px;
 }
+
+.err {
+  color: rgb(125, 2, 2);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.btn-form {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-form:disabled {
+  background-color: #494848;
+  cursor: not-allowed;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+.navbar li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar a {
+
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* BookCard.css */
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+.book-card {
+  border: 1px solid #EFEFEF;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100vw;
+}
+
+.book-card h3 {
+  margin-top: 7px;
+  font-size: 18px;
+
+}
+
+.book-card p {
+
+  font-size: 14px;
+}
+
+/* Search.css*/
+.search {
+  border: none;
+
+}
+
+/*LoginPage css*/
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+
+  
+}
+
+.login-input {
+  margin-bottom: 15px;
+
+}
+
+.login-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #EFEFEF;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.login-error {
+  color: rgb(125, 2, 2);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+
+
+
+
+
